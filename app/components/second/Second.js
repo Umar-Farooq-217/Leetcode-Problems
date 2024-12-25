@@ -30,9 +30,22 @@ export default function Second() {
 
 // -------------Answer---------------
 
+function palindromeNumber(num){
+var number = parseInt(num.toString().split('').reverse().join(''))
+if(number === num){
+  console.log('Yes this is Palindrome Number');
+  return true
+  
+}
+else{
+  console.log('No this is not Palindrome');
+  return false
+}
+
+}
 var num = 12321
-// var num1 = num
-console.log(num);
+console.log(palindromeNumber(num));
+
 
   return (
     <div>
